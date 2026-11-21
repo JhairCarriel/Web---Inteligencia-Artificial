@@ -1,0 +1,44 @@
+:root{--azul:#2a7f9e;--azul-claro:#e3f1fd;--azul-texto:#2a5d8f;--amarillo:#fff0c2;--amarillo-texto:#8a5a00;--texto:#1c1c1c;--fondo:#eef1f5}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;font-family:"Segoe UI",Roboto,Arial,sans-serif;color:var(--texto);background:var(--fondo);line-height:1.6}
+
+/* Menú */
+.menu{background:var(--azul);position:sticky;top:0;z-index:10;padding:10px 16px;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.menu .logo{color:#fff;font-weight:700;margin:0 0 8px;font-size:1rem}
+.menu ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}
+.menu form{margin:0}
+.menu button{font:inherit;font-size:.85rem;cursor:pointer;color:#fff;background:transparent;border:0;border-bottom:3px solid transparent;border-radius:0;padding:6px 8px;transition:border-color .15s}
+.menu button:hover,.menu button:focus-visible{border-bottom-color:#fff;outline:none}
+.menu button.activo{border-bottom-color:#ffd54a;font-weight:700}
+
+/* Tarjeta de tema */
+main{flex:1;width:100%;max-width:760px;margin:24px auto;padding:0 12px}
+.tema{background:#fff;border-radius:0;overflow:hidden;box-shadow:none;border:1px solid #c9d3dc;}
+.tema header{background:var(--azul);color:#fff;padding:14px 20px 12px}
+.marca{margin:0 0 10px;font-weight:700;font-size:.85rem;letter-spacing:.03em}
+.tema h1{margin:0;font-size:1.6rem;line-height:1.25}
+.sub{margin:6px 0 0;font-size:.85rem}
+.cuerpo{padding:18px 20px 22px}
+.cuerpo h2{font-size:1.15rem;margin:18px 0 8px}
+.cuerpo h2:first-child{margin-top:0}
+.cuerpo p{margin:0 0 12px}
+.cuerpo ul{margin:0 0 14px;padding-left:22px}
+
+/* Cajas */
+.caja{border-radius:10px;padding:12px 16px;margin:14px 0}
+.caja strong{display:block;font-size:.9rem;margin-bottom:4px;color:var(--texto)}
+.caja p{margin:0}
+.resumen{background:var(--azul-claro);color:var(--azul-texto)}
+.destacado{background:var(--amarillo);color:var(--amarillo-texto);font-weight:700}
+.destacado strong{font-weight:600}
+
+.cuerpo h3{font-size:1.1rem;margin:18px 0 6px}
+.tema footer{background:var(--azul);color:#fff;text-align:center;font-size:.72rem;padding:10px}
+
+@media(max-width:520px){.tema h1{font-size:1.3rem}.cuerpo{padding:16px}}
+
+/* Barra de copyright */
+.copyright{background:#d9dce1;color:#444;text-align:center;font-size:.8rem;padding:6px 10px;border-top:1px solid #c3c7ce}
+
+/* Íconos */
+.tema i,.menu .logo i{margin-right:6px}
